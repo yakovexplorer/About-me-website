@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+  --primary-color: #3f51b5;
+  --secondary-color: #f50057;
+  --dark-bg-color: #212121;
+  --light-text-color: #ffffff;
+  --dark-text-color: #000000;
+}
+
+[theme="dark"] {
+  background-color: var(--dark-bg-color);
+  color: var(--light-text-color);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.languages,
+.rl-languages,
+.projects {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.languages > li,
+.rl-languages > li,
+.projects > li {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--light-text-color);
+}
+
+.projects > li > img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+section {
+  margin-bottom: 1.5em;
+  padding: 20px;
+  background-color: var(--dark-bg-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#text {
+  margin-top: 2em;
+  font-weight: 400;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
